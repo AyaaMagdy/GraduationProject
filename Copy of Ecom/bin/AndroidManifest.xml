@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ecom.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ecom.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.Activity2"
+            android:label="@string/title_activity_activity2" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.AttendanceActivity"
+            android:label="@string/title_activity_attendance" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.Hy4oohActivity"
+            android:label="@string/title_activity_Hy4ooh" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.ShowAttendanceActivity"
+            android:label="@string/title_activity_show_attendance" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.FinalGradeActivity"
+            android:label="@string/title_activity_final_grade" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.Show_resultActivity"
+            android:label="@string/title_activity_grades_result" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TableActivity"
+            android:label="@string/title_activity_table" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.SaturdayActivity"
+            android:label="@string/title_activity_saturday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.SundayActivity"
+            android:label="@string/title_activity_sunday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.MondayActivity"
+            android:label="@string/title_activity_monday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TuesdayActivity"
+            android:label="@string/title_activity_tuesday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.DayActivity"
+            android:label="@string/title_activity_day" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.OfficeHoursActivity"
+            android:label="@string/title_activity_office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.Staff_emails"
+            android:label="@string/title_activity_Staff_emails" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.MatrialLinks"
+            android:label="@string/title_activity_MatrialLinks" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.GPA"
+            android:label="@string/title_activity_GPA" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.FirstActivity"
+            android:label="@string/title_activity_first" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.ThirdActivity"
+            android:label="@string/title_activity_third" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.FourthActivity"
+            android:label="@string/title_activity_fourth" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.FirstTerm"
+            android:label="@string/title_activity_first_term" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.SecondTerm"
+            android:label="@string/title_activity_second_term" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.ShowLinks"
+            android:label="@string/title_activity_show_links" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.AddingLinks"
+            android:label="@string/title_activity_show_links" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.CS_OfficeHoursActivity"
+            android:label="@string/title_activity_cs__office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.IS_OfficeHoursActivity"
+            android:label="@string/title_activity_is__office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.DS_OfficeHoursActivity"
+            android:label="@string/title_activity_ds__office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.IS_officeHoursActivity"
+            android:label="@string/title_activity_is_office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.IT_OfficeHoursActivity"
+            android:label="@string/title_activity_is__office_hours_activty" >
+        </activity>
+    </application>
+
+</manifest>

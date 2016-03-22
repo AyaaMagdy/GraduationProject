@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ecom</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_CS">Hello CS!</string>
+    <string name="ID">ID</string>
+    <string name="Ecom">Ecom</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="title_activity_attendance">attendance</string>
+    <string name="title_activity_Hy4ooh">Hy4ooh</string>
+    <string name="title_activity_show_attendance">showAttendance</string>
+    <string name="title_activity_final_grade">finalGrades</string>
+    <string name="title_activity_grades_result">GradesResults</string>
+    <string name="title_activity_table">Table</string>
+    <string name="title_activity_saturday">SaturdayActivity</string>
+    <string name="hello_Saturday">Saturday</string>
+    <string name="title_activity_sunday">SundayActivity</string>
+    <string name="title_activity_monday">MondayActivity</string>
+    <string name="title_activity_tuesday">TuesdayActivity</string>
+    <string name="title_activity_day">DayActivity</string>
+    <string name="title_activity_office_hours">OfficeHoursActivity</string>
+    <string name="title_activity_Staff_emails">Staff_emailsActivity</string>
+    <string name="title_activity_MatrialLinks">MatrialLinksActivity</string>
+    <string name="title_activity_GPA">GPAActivity</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="title_activity_fourth">FourthActivity</string>
+    <string name="title_activity_first_term">FirstTermActivity</string>
+    <string name="title_activity_second_term">SecondTermActivity</string>
+    <string name="title_activity_show_links">ShowLinksActivity</string>
+    <string name="title_activity_adding_links">AddingLinksActivity</string>
+    <string name="title_activity_cs__office_hours">CS_OfficeHoursActivity</string>
+    <string name="title_activity_is__office_hours">IS_OfficeHoursActivity</string>
+    <string name="title_activity_ds__office_hours">DS_OfficeHoursActivity</string>
+    <string name="title_activity_is_office_hours">IS_officeHoursActivity</string>
+    <string name="title_activity_is__office_hours_activty">IS_OfficeHoursActivty</string>
+
+</resources>

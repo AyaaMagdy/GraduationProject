@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/gradeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:onClick="grade"
+        android:text="grades" />
+
+    <Button
+        android:id="@+id/Attendanceid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/staffemailid"
+        android:onClick="attendance"
+        android:text="Attendance" />
+    <Button
+        android:id="@+id/Matrialsid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/GPAid"
+        android:layout_below="@+id/Attendanceid"
+        android:layout_centerVertical="true"
+        android:onClick="MatrialsLink"
+        android:text="Helpful Matrials" />
+    
+    <Button
+        android:id="@+id/GPAid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Matrialsid"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/staffemailid"
+        android:onClick="GPA"
+        android:text="GPA" />
+    
+    <Button
+        android:id="@+id/Agendaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/GPAid"
+        android:layout_centerVertical="true"
+        android:onClick="Agenda"
+        android:text="Agenda" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Agendaid"
+        android:layout_marginTop="67dp"
+        android:onClick="logOut"
+        android:text="logout" />
+
+    <Button
+        android:id="@+id/staffemailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gradeId"
+        android:layout_alignBottom="@+id/gradeId"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:onClick="staffemails"
+        android:text="email staff" />
+
+    <Button
+        android:id="@+id/tableID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Agendaid"
+        android:layout_alignRight="@+id/staffemailid"
+        android:onClick="tableFun"
+        android:text="Table" />
+
+      <Button
+          android:id="@+id/OHID"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/Agendaid"
+          android:layout_marginTop="26dp"
+          android:onClick="officeHours"
+          android:text="Office Hours" />
+
+</RelativeLayout>
