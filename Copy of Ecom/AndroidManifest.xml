@@ -144,6 +144,38 @@
             android:name="com.example.ecom.IT_OfficeHoursActivity"
             android:label="@string/title_activity_is__office_hours_activty" >
         </activity>
+        <activity
+            android:name="com.example.ecom.TATableActivity"
+            android:label="@string/title_activity_tatable" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.StudentLoginActivity"
+            android:label="@string/title_activity_student_login" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TASaturdayActivity"
+            android:label="@string/title_activity_tasaturday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TASundayActivity"
+            android:label="@string/title_activity_tasunday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TAMondayActivity"
+            android:label="@string/title_activity_tamonday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TATuesdayActivity"
+            android:label="@string/title_activity_tatuesday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TAWednesdayActivity"
+            android:label="@string/title_activity_tawednesday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.TAThursdayActivity"
+            android:label="@string/title_activity_tathursday" >
+        </activity>
     </application>
 
 </manifest>

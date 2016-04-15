@@ -106,7 +106,7 @@ public class LoginService extends AsyncTask<String,Void,String> {
 	    	
 	    	if(result.contains("Login Success"))
 	    	{
-	    		Intent homeIntent = new Intent(MainActivity.getAppContext(),
+	    		Intent homeIntent = new Intent(StudentLoginActivity.getAppContext(),
 						HomeActivity.class);
 	    		
 	    		
@@ -115,18 +115,18 @@ public class LoginService extends AsyncTask<String,Void,String> {
 				//homeIntent.putExtra("status", object.getString("Status"));
 				//homeIntent.putExtra("name", object.getString("name"));
 				
-				MainActivity.getAppContext().startActivity(homeIntent);
+	    		StudentLoginActivity.getAppContext().startActivity(homeIntent);
 	    	}
 	        else{
 	    	  alertDialog.setMessage("Login Failed.......Try Again..");  
 	          alertDialog.show(); 
-	          Intent mainIntent = new Intent(MainActivity.getAppContext(),
-						MainActivity.class);
+	          Intent mainIntent = new Intent(StudentLoginActivity.getAppContext(),
+	        		  StudentLoginActivity.class);
 	    		
 	    		
 	    		mainIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 				
-				MainActivity.getAppContext().startActivity(mainIntent);
+	    		StudentLoginActivity.getAppContext().startActivity(mainIntent);
 	        
 	        }
 	      

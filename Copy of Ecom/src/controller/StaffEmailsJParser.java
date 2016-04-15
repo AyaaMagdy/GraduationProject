@@ -3,18 +3,14 @@ package controller;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
-import model.GradeModel;
 import model.StaffEmails;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import services.FinalGradesService;
 import services.StaffEmailsService;
 
 import android.content.Context;
-import android.util.Log;
 
 public class StaffEmailsJParser {
 	public ArrayList<StaffEmails> getDepartmentEmails(String dep,Context ctx) throws JSONException, InterruptedException, ExecutionException
@@ -24,7 +20,6 @@ public class StaffEmailsJParser {
 	    StaffEmailsService service=new StaffEmailsService(ctx);  
      //   Log.v("test","StartJson");
         service.execute("http://10.0.2.2/grades/emails.php",dep,"getEmails");
-        String r2=""; 
      String result="";
      result=service.get();
      JSONArray jarray=new JSONArray(result);

@@ -38,5 +38,13 @@
     <string name="title_activity_ds__office_hours">DS_OfficeHoursActivity</string>
     <string name="title_activity_is_office_hours">IS_officeHoursActivity</string>
     <string name="title_activity_is__office_hours_activty">IS_OfficeHoursActivty</string>
+    <string name="title_activity_tatable">TATableActivity</string>
+    <string name="title_activity_student_login">StudentLoginActivity</string>
+    <string name="title_activity_tasaturday">TASaturdayActivity</string>
+    <string name="title_activity_tasunday">TASundayActivity</string>
+    <string name="title_activity_tamonday">TAMondayActivity</string>
+    <string name="title_activity_tatuesday">TATuesdayActivity</string>
+    <string name="title_activity_tawednesday">TAWednesdayActivity</string>
+    <string name="title_activity_tathursday">TAThursdayActivity</string>
 
 </resources>

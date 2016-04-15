@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +36,6 @@ public class TableService extends AsyncTask<String,Void,String> {
 	protected String doInBackground(String... params) {
 		String response = "" ;
 		try {
-			URL url = new URL(params[0]);
 			String method = params[3];
 			//c.execute("http://10.0.2.2/ecom/RegesteredCourses.php",ID,term,year,"getCourses");
 			
