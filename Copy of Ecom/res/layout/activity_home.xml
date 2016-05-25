@@ -97,4 +97,15 @@
           android:onClick="officeHours"
           android:text="Office Hours" />
 
+      <Button
+          android:id="@+id/button2"
+          style="?android:attr/buttonStyleSmall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/button1"
+          android:layout_alignBottom="@+id/button1"
+          android:layout_alignRight="@+id/Agendaid"
+          android:onClick="exit"
+          android:text="Exit" />
+
 </RelativeLayout>

@@ -28,5 +28,15 @@
         android:layout_centerVertical="true"
          android:onClick="teacherAssistant"
         android:text="TA" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="61dp"
+        android:layout_toRightOf="@+id/TAID"
+        android:onClick="exit"
+        android:text="Exit" />
    
 </RelativeLayout>

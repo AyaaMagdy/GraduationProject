@@ -38,7 +38,7 @@ public class DayActivity extends Activity {
            Liner.setOrientation(LinearLayout.HORIZONTAL);
         
            Liner.addView(Mytext);
-           LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT,100);
+           LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT,200);
 
                    Liner.setLayoutParams(p);
 

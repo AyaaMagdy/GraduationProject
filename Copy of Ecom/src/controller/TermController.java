@@ -26,9 +26,9 @@ public class TermController {
 	public ArrayList<Courses> SelectRegisterCourses(String Term,Context ctx,String Year) throws InterruptedException, ExecutionException, JSONException{
 		TermService c = new TermService(ctx);
 		c.execute("http://10.0.2.2/webapp/SelectCoursesByLevel.php","selectCourses",Term,Year);
-		Log.v("testLaya","b552");
+		//Log.v("testLaya","b552");
 		String result = c.get();
-        Log.v("sqlobj",result);
+       // Log.v("sqlobj",result);
         JSONArray jArray=new JSONArray(result);
         String name="";
         String id="";
@@ -41,7 +41,7 @@ public class TermController {
             course.add(new Courses(name , id)); 
            // Log.v("test",id);
         }
-        Log.v("sqlobj",course.size()+"");
+       // Log.v("sqlobj",course.size()+"");
         return course;
 	}
 	
@@ -49,29 +49,62 @@ public class TermController {
 	public ArrayList<MatrialModel> SelectMatrialLinks(String SubjName,Context ctx) throws InterruptedException, ExecutionException, JSONException{
 		TermService c = new TermService(ctx);
 		c.execute("http://10.0.2.2/webapp/SelectMatrialLinks.php","selectLinks",SubjName);
-		Log.v("testLaya","b552");
+		//Log.v("testLaya","b552");
 		String result = c.get();
         Log.v("sqlobj",result);
         JSONArray jArray=new JSONArray(result);
         String Link="";
+        String LinkID="";
         String Topic="";
+        String Likes="";
         ArrayList<MatrialModel> MLinks = new ArrayList<MatrialModel>();
         for(int i=0;i<jArray.length();i++)
         {
             JSONObject object=jArray.getJSONObject(i);
             Link=object.getString("link");
             Topic=object.getString("topicName");
-            MLinks.add(new MatrialModel(Topic, Link)); 
+            LinkID=object.getString("LinkID");
+            Likes=object.getString("likesNumber");
+            MLinks.add(new MatrialModel(Topic, Link,LinkID,Integer.parseInt(Likes))); 
            // Log.v("test",id);
         }
         Log.v("sqlobj",MLinks.size()+"");
         return MLinks;
 	}
 	
+	
+	public int SelectLinkLiker(String linkID,String studentID,Context ctx) throws InterruptedException, ExecutionException, JSONException{
+		TermService c = new TermService(ctx);
+		c.execute("http://10.0.2.2/webapp/selectLikers.php","selectLinkLikers",linkID,studentID);
+		String result = c.get();
+        Log.v("l mfrood fdya ",result);
+        JSONArray jArray=new JSONArray(result);
+       
+        Log.v("arr length",jArray.length()+""); 
+        return jArray.length() ;
+	}
+	
+	
 	public void AddMatrialLinks(String topicName,String Link,String subjName,Context ctx) throws InterruptedException, ExecutionException, JSONException{
 		TermService c = new TermService(ctx);
 		c.execute("http://10.0.2.2/webapp/InsertLinks.php","addLinks",topicName,Link,subjName);
 		String result = c.get();
-		Log.v("adddddddd",result);
+		//Log.v("adddddddd",result);
 	}
+	
+	public void AddLinkLike(String linkID,String studentID,Context ctx) throws InterruptedException, ExecutionException, JSONException{
+		TermService c = new TermService(ctx);
+		c.execute("http://10.0.2.2/webapp/InsertLikes.php","addLikes",linkID,studentID);
+		String result = c.get();
+		//Log.v("adddddddd",result);
+	}
+	
+	public void UpdateLinkLike(String linkID,Context ctx) throws InterruptedException, ExecutionException, JSONException{
+		TermService c = new TermService(ctx);
+		c.execute("http://10.0.2.2/webapp/updateLinkLikes.php","updateLikes",linkID);
+		String result = c.get();
+		
+	}
+	
+	
 }

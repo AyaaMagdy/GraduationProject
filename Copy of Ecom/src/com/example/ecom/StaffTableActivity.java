@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.widget.TabHost;
 
-public class TATableActivity extends TabActivity {
+public class StaffTableActivity extends TabActivity {
 	
 	TabHost mTabHost ;
 	

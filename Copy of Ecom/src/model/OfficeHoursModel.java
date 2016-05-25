@@ -1,12 +1,24 @@
 package model;
 
-public class OfficeHoursModel
+import java.io.Serializable;
+
+public class OfficeHoursModel implements Serializable
 {
-	 String name;
+	 public OfficeHoursModel() {
+		
+		
+	}
+	String name;
 	 String day;
 	 String time;
 	 String flag;
 
+	 public OfficeHoursModel(String name,String day,String time) {
+		 this.name=name;
+		 this.day=day;
+		 this.time=time;
+		
+	}
 	public String getName() {
 		return name;
 	}

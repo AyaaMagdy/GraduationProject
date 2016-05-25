@@ -46,5 +46,15 @@
     <string name="title_activity_tatuesday">TATuesdayActivity</string>
     <string name="title_activity_tawednesday">TAWednesdayActivity</string>
     <string name="title_activity_tathursday">TAThursdayActivity</string>
+    <string name="title_activity_staff_home">StaffHomeActivity</string>
+    <string name="title_activity_staff_login">StaffLoginActivity</string>
+    <string name="title_activity_stuff_home">StuffHomeActivity</string>
+    <string name="title_activity_add_office">AddOffice</string>
+    <string name="title_activity_add_new_office">AddNewOffice</string>
+    <string name="title_activity_update_office_hours">UpdateOfficeHours</string>
+    <string name="title_activity_update_selected">UpdateSelected</string>
+    <string name="title_activity_delete_office">DeleteOffice</string>
+    <string name="title_activity_uptadated">Uptadated</string>
+    
 
 </resources>

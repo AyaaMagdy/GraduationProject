@@ -79,6 +79,12 @@ public class HomeActivity extends Activity {
     	Intent mIntent=new Intent(HomeActivity.this ,OfficeHoursActivity.class);
 		startActivity(mIntent);
     }
+    public void exit(View v )
+    {
+    	moveTaskToBack(true);
+    	android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
+    }
     public void Agenda(View v)
     {
     	 

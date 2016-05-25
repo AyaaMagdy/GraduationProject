@@ -145,7 +145,7 @@
             android:label="@string/title_activity_is__office_hours_activty" >
         </activity>
         <activity
-            android:name="com.example.ecom.TATableActivity"
+            android:name="com.example.ecom.StaffTableActivity"
             android:label="@string/title_activity_tatable" >
         </activity>
         <activity
@@ -175,6 +175,42 @@
         <activity
             android:name="com.example.ecom.TAThursdayActivity"
             android:label="@string/title_activity_tathursday" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.StaffHomeActivity"
+            android:label="@string/title_activity_staff_home" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.StuffLoginActivity"
+            android:label="@string/title_activity_staff_login" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.StuffHomeActivity"
+            android:label="@string/title_activity_stuff_home" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.AddOffice"
+            android:label="@string/title_activity_add_office" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.AddNewOffice"
+            android:label="@string/title_activity_add_new_office" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.UpdateOfficeHours"
+            android:label="@string/title_activity_update_office_hours" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.UpdateSelected"
+            android:label="@string/title_activity_update_selected" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.DeleteOffice"
+            android:label="@string/title_activity_delete_office" >
+        </activity>
+        <activity
+            android:name="com.example.ecom.Uptadated"
+            android:label="@string/title_activity_uptadated" >
         </activity>
     </application>
 

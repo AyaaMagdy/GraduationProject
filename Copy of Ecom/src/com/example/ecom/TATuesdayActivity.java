@@ -10,6 +10,8 @@ import org.json.JSONException;
 import controller.staffTableController;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.Menu;
 import android.widget.TableLayout;
@@ -22,7 +24,8 @@ public class TATuesdayActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tatuesday);
-		String email="n.abdelhameed";
+		  SharedPreferences sharedpreferences = getSharedPreferences("StuffPref", Context.MODE_PRIVATE);
+	      String email=sharedpreferences.getString("ID","empty");
 		String day="tuesday";
 		staffTableController staffTAObject= new staffTableController();
 		try{

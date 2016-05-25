@@ -92,7 +92,7 @@ public class TermService  extends AsyncTask<String,Void,String> {
             while((line = buffer.readLine())!=null){
            	response += line;
            }
-				
+          //  Log.v("testLaya",response);
 			}
 			
            else if(method.equals("addLinks")){
@@ -122,6 +122,83 @@ public class TermService  extends AsyncTask<String,Void,String> {
            }
 				
 			}
+			
+           else if(method.equals("selectLinkLikers")){
+   			
+               List<NameValuePair> param = new ArrayList<NameValuePair>();
+   			
+   	        param.add(new BasicNameValuePair("linkID",params[2]));
+   	        
+   	        param.add(new BasicNameValuePair("studentID",params[3]));
+   	        
+   	        UrlEncodedFormEntity u=new UrlEncodedFormEntity(param,"UTF-8");
+   	        
+   	        httpPost.setEntity(u);
+   	        
+               HttpResponse HttpRes = client.execute(httpPost);
+              
+               InputStream content = HttpRes.getEntity().getContent();
+              
+               BufferedReader buffer = new BufferedReader(new InputStreamReader(content)); 
+              
+               String line = "" ;
+              
+               while((line = buffer.readLine())!=null){
+              	response += line;
+              }
+   				
+   			}
+			
+           else if(method.equals("addLikes")){
+      			
+               List<NameValuePair> param = new ArrayList<NameValuePair>();
+   			
+   	        param.add(new BasicNameValuePair("linkID",params[2]));
+   	        
+   	        param.add(new BasicNameValuePair("studentID",params[3]));
+   	        
+   	        UrlEncodedFormEntity u=new UrlEncodedFormEntity(param,"UTF-8");
+   	        
+   	        httpPost.setEntity(u);
+   	        
+               HttpResponse HttpRes = client.execute(httpPost);
+              
+               InputStream content = HttpRes.getEntity().getContent();
+              
+               BufferedReader buffer = new BufferedReader(new InputStreamReader(content)); 
+              
+               String line = "" ;
+              
+               while((line = buffer.readLine())!=null){
+              	response += line;
+              }
+   				
+   			}
+			
+           else if(method.equals("updateLikes")){
+     			
+               List<NameValuePair> param = new ArrayList<NameValuePair>();
+   			
+   	        param.add(new BasicNameValuePair("linkID",params[2]));
+   	        
+   	        UrlEncodedFormEntity u=new UrlEncodedFormEntity(param,"UTF-8");
+   	        
+   	        httpPost.setEntity(u);
+   	        
+               HttpResponse HttpRes = client.execute(httpPost);
+              
+               InputStream content = HttpRes.getEntity().getContent();
+              
+               BufferedReader buffer = new BufferedReader(new InputStreamReader(content)); 
+              
+               String line = "" ;
+              
+               while((line = buffer.readLine())!=null){
+              	response += line;
+              }
+   				
+   			}
+              
            
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block

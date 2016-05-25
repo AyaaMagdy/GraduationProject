@@ -21,8 +21,14 @@ public class MainActivity extends Activity {
   }
   public void teacherAssistant(View v )
   {
-	  Intent mIntent=new Intent(MainActivity.this ,TATableActivity.class);
+	  Intent mIntent=new Intent(MainActivity.this ,StuffLoginActivity.class);
 	  startActivity(mIntent); 
+  }
+  public void exit(View v )
+  {
+  	moveTaskToBack(true);
+  	android.os.Process.killProcess(android.os.Process.myPid());
+      System.exit(1);
   }
    
 

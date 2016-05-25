@@ -32,7 +32,7 @@ public class TableActivity extends Activity  {
  
         Spinner dynamicSpinner = (Spinner) findViewById(R.id.dynamic_spinner);
  
-        String[] items = new String[] { "Choose Day","Saturday", "Sunday", "Monday","Tuesday","Wednesday","Thursday" };
+        String[] items = new String[] {"Choose Day","Saturday", "Sunday", "Monday","Tuesday","Wednesday","Thursday" };
  
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items);
@@ -84,6 +84,9 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+                	Intent in = new Intent(TableActivity.this,DayActivity.class);
+	               	in.putExtra("DayTable", tableList);
+	               	startActivity(in);
                 	
                 }
                
@@ -100,6 +103,9 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+		               	Intent in = new Intent(TableActivity.this,DayActivity.class);
+		               	in.putExtra("DayTable", tableList);
+		               	startActivity(in);
                	
                }
                if(day.equals("Monday"))
@@ -115,6 +121,9 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+		               	Intent in = new Intent(TableActivity.this,DayActivity.class);
+		               	in.putExtra("DayTable", tableList);
+		               	startActivity(in);
                }
                if(day.equals("Tuesday"))
                {
@@ -129,6 +138,9 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+		               	Intent in = new Intent(TableActivity.this,DayActivity.class);
+		               	in.putExtra("DayTable", tableList);
+		               	startActivity(in);
                	
                }
                if(day.equals("Wednesday"))
@@ -144,6 +156,9 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
+		               	Intent in = new Intent(TableActivity.this,DayActivity.class);
+		               	in.putExtra("DayTable", tableList);
+		               	startActivity(in);
                }
                if(day.equals("Thursday"))
                {
@@ -158,14 +173,15 @@ public class TableActivity extends Activity  {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-               	
+		               	Intent in = new Intent(TableActivity.this,DayActivity.class);
+		               	in.putExtra("DayTable", tableList);
+		               	startActivity(in);
+		               	
                }
                
                
                
-              	Intent in = new Intent(TableActivity.this,DayActivity.class);
-               	in.putExtra("DayTable", tableList);
-               	startActivity(in);
+              	
             }
             
  
